@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="date-label" id="date-label"></div>
+      <h1>My Tasks</h1>
+      <p class="tagline">Stay focused. Get it done.</p>
+    </header>
+
+    <div class="input-area">
+      <input type="text" id="task-input" placeholder="What needs to be done?" maxlength="120" />
+      <select id="priority-sel">
+        <option value="low">🟢 Low</option>
+        <option value="mid" selected>🟡 Mid</option>
+        <option value="high">🔴 High</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="done">Done</button>
+    </div>
+
+    <ul class="task-list" id="task-list"></ul>
+
+    <div class="footer">
+      <span id="count-label"></span>
+      <button id="clear-btn">Clear completed</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

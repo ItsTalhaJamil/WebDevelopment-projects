@@ -1,5 +1,5 @@
 // load navbar
-fetch("../navbar/navbar.html")
+fetch("../navbar/index.html")
 .then(res => res.text())
 .then(data => {
     document.getElementById("navbar").innerHTML = data;
@@ -18,8 +18,9 @@ fetch("../navbar/navbar.html")
 });
 
 
+
 // load hero
-fetch("../hero-section/hero-section.html")
+fetch("../hero-section/index.html")
 .then(res => res.text())
 .then(data => {
     document.getElementById("hero-section").innerHTML = data;
@@ -33,7 +34,7 @@ fetch("../hero-section/hero-section.html")
 });
 
 // load about
-fetch("../about-page/about.html")
+fetch("../about-page/index.html")
 .then(res => res.text())
 .then(data => {
     document.getElementById("about").innerHTML = data;
@@ -46,7 +47,7 @@ fetch("../about-page/about.html")
 });
 
 // load skills
-fetch("../skills/skills.html")
+fetch("../skills/index.html")
 .then(res => res.text())
 .then(data => {
     document.getElementById("skills").innerHTML = data;
@@ -60,7 +61,7 @@ fetch("../skills/skills.html")
 
 
 // load projects
-fetch("../projects/project.html")
+fetch("../projects/index.html")
 .then(res => res.text())
 .then(data => {
     document.getElementById("projects").innerHTML = data;
@@ -73,7 +74,7 @@ fetch("../projects/project.html")
 });
 
 // load contact
-fetch("../contact/contact.html")
+fetch("../contact/index.html")
 .then(res => res.text())    
 .then(data => {
     document.getElementById("contact").innerHTML = data;
@@ -86,7 +87,7 @@ fetch("../contact/contact.html")
 });
 
 // load footer
-fetch("../footer/footer.html")
+fetch("../footer/index.html")
 .then(res => res.text())
 .then(data => {
     document.getElementById("footer").innerHTML = data;
